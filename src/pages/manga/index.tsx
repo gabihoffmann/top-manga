@@ -33,7 +33,9 @@ export function MangaPage() {
 
       {isLoading && <Skeleton variant="rectangular" />}
 
-      <Button onClick={handleShowFavorites}>only favorites</Button>
+      <Button className="bg-red-600 m-2" onClick={handleShowFavorites}>
+        only favorites
+      </Button>
 
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {data
